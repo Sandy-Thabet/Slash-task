@@ -21,6 +21,7 @@ model Users {
   password String
   address String
   cart Cart?
+  orders Orders[]
 }
 
 model Products {
@@ -43,6 +44,8 @@ model Orders {
   subTotal Float
   total Float
   discount Float?
+  user Users @relation(fields: [userId] , references:[userId] , onDelete: Cascade)
+  userId Int
 }
 
 model OrderItem {

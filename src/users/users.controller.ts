@@ -1,6 +1,15 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  ParseIntPipe,
+  Post,
+  Query,
+} from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
+import { GetUserOrdersDto } from './dto/get-user-orders.dto';
 
 @Controller('users')
 export class UsersController {
@@ -14,5 +23,13 @@ export class UsersController {
   @Get()
   public async getAllUsers() {
     return await this.userService.getAllUsers();
+  }
+
+  @Get(':userId/orders')
+  public async getUserOrders(
+    @Param('userId', ParseIntPipe) userId: number,
+    @Query() dto: GetUserOrdersDto,
+  ) {
+    return await this.userService.getUserOrders(userId, dto);
   }
 }
