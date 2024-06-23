@@ -175,8 +175,8 @@ Additionally, you can find the extracted Postman collection file in the reposito
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/Sandy-Thabet/Slash-task
-   cd Sandy-Thabet/Slash-task
+   git clone https://github.com/Sandy-Thabet/Slash-task.git
+   cd Slash-task
    ```
 
 2. Install the dependencies:
@@ -190,23 +190,44 @@ Additionally, you can find the extracted Postman collection file in the reposito
    - Ensure PostgreSQL is running.
    - Create a `.env` file and add your database URL:
      ```env
-     PORT= 2345
+     PORT=2345
      DATABASE_URL=postgresql://user:password@localhost:5432/your-database-name
      ```
 
-4. Run the migrations to set up the database schema:
+4. Install Prisma client:
+
+   ```sh
+   npm install @prisma/client
+   ```
+
+5. Install necessary packages for configuration, bcrypt, and class validation:
+
+   ```sh
+   npm i --save @nestjs/config
+   npm install bcrypt
+   npm install class-validator class-transformer
+   npm install prisma --save-dev
+   ```
+
+6. Generate Prisma client:
+
+   ```sh
+   npx prisma generate
+   ```
+
+7. Run the migrations to set up the database schema:
 
    ```sh
    npx prisma migrate dev
    ```
 
-5. Start the application:
+8. Start the application:
 
    ```sh
    npm run start:dev
    ```
 
-6. The application should now be running at `http://localhost:3000/api` by changing 3000 with PORT assigned in .env file.
+9. The application should now be running at `http://localhost:3000/api` by changing 3000 with PORT assigned in .env file.
 
 ## Testing the Application
 
