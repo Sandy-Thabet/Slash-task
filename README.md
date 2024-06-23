@@ -162,7 +162,7 @@ npm install --save @nestjs/swagger
 
 ## ERD Diagram
 
-![ERD Diagram](images/erd-diagram.png)
+![ERD Diagram](images/ERD.vpd.png)
 
 ## Postman Collection
 
