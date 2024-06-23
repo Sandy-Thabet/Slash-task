@@ -197,25 +197,19 @@ Additionally, you can find the extracted Postman collection ![file](/postman%20c
    npm install prisma --save-dev
    ```
 
-6. Generate Prisma client:
-
-   ```sh
-   npx prisma generate
-   ```
-
-7. Run the migrations to set up the database schema:
+6. Run the migrations to set up the database schema:
 
    ```sh
    npx prisma migrate dev
    ```
 
-8. Start the application:
+7. Start the application:
 
    ```sh
    npm run start:dev
    ```
 
-9. The application should now be running at `http://localhost:2345/api` by changing 2345 with PORT assigned in .env file.
+8. The application should now be running at `http://localhost:2345/api` by changing 2345 with PORT assigned in .env file.
 
 ## Testing the Application
 
