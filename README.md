@@ -157,7 +157,7 @@ The database schema includes the following entities:
 
 You can import the Postman collection to test the API endpoints. Here is the link to the [Postman collection](https://documenter.getpostman.com/view/32928987/2sA3XWdeSf).
 
-Additionally, you can find the extracted Postman collection ![file](/Slash%20Task.postman_collection.json) in the repository.
+Additionally, you can find the extracted Postman collection ![file](/postman%20collection/Slash%20Task.postman_collection.json) in the repository.
 
 ## Running the Application
 
@@ -215,7 +215,7 @@ Additionally, you can find the extracted Postman collection ![file](/Slash%20Tas
    npm run start:dev
    ```
 
-9. The application should now be running at `http://localhost:3000/api` by changing 3000 with PORT assigned in .env file.
+9. The application should now be running at `http://localhost:2345/api` by changing 2345 with PORT assigned in .env file.
 
 ## Testing the Application
 
