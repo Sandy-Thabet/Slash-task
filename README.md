@@ -157,7 +157,7 @@ The database schema includes the following entities:
 
 You can import the Postman collection to test the API endpoints. Here is the link to the [Postman collection](https://documenter.getpostman.com/view/32928987/2sA3XWdeSf).
 
-Additionally, you can find the extracted Postman collection file in the repository.
+Additionally, you can find the extracted Postman collection ![file](/Slash%20Task.postman_collection.json) in the repository.
 
 ## Running the Application
 
