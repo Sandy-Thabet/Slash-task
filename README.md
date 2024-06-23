@@ -9,7 +9,6 @@ This project is an implementation of an Order Management System (OMS) for an e-c
   - [Environment Setup](#environment-setup)
   - [Database Schema](#database-schema)
   - [API Endpoints](#api-endpoints)
-  - [Documentation](#documentation)
   - [ERD Diagram](#erd-diagram)
   - [Postman Collection](#postman-collection)
   - [Running the Application](#running-the-application)
@@ -150,16 +149,6 @@ The database schema includes the following entities:
   - **Endpoint:** `POST /api/orders/apply-coupon`
   - **Description:** Applies a coupon to an order.
 
-## Documentation
-
-The API documentation is generated using Swagger. To access the Swagger UI, run the application and navigate to `http://localhost:3000/api` by changing 3000 with PORT assigned in .env file.
-
-To install Swagger in your project, use the following command:
-
-```sh
-npm install --save @nestjs/swagger
-```
-
 ## ERD Diagram
 
 ![ERD Diagram](images/ERD.vpd.png)
@@ -176,7 +165,6 @@ Additionally, you can find the extracted Postman collection file in the reposito
 
    ```sh
    git clone https://github.com/Sandy-Thabet/Slash-task.git
-   cd Slash-task
    ```
 
 2. Install the dependencies:
